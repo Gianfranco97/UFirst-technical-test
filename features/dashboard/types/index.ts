@@ -16,7 +16,7 @@ export type EpaData = {
   document_size: string;
 };
 
-export type RequestMethodsAndCodes = {
+export type RequestDistribution = {
   [key: string]: number;
 };
 
@@ -26,8 +26,8 @@ export type DashboardData = {
     totalRequest: number;
     totalInvalidRequest: number;
     totalRequestPerMinute: number;
-    totalCorrectAnswersLight: number;
-    distributionRequestMethods: RequestMethodsAndCodes;
-    distributionRequestCodes: RequestMethodsAndCodes;
+    distributionRequestMethods: RequestDistribution;
+    distributionRequestCodes: RequestDistribution;
+    distributionRequestSizes: RequestDistribution;
   };
 };

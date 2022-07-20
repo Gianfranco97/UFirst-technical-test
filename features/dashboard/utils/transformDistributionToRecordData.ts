@@ -1,7 +1,7 @@
-import type { RequestMethodsAndCodes } from "features/dashboard/types";
+import type { RequestDistribution } from "features/dashboard/types";
 
 export const transformDistributionToRecordData = (
-  initialObject: RequestMethodsAndCodes
+  initialObject: RequestDistribution
 ) => {
   const data: Record<string, any>[] = [];
 

@@ -2,10 +2,10 @@ import { useMemo } from "react";
 import { Card } from 'antd';
 import { Pie } from '@ant-design/plots';
 import { transformDistributionToRecordData } from "features/dashboard/utils/transformDistributionToRecordData";
-import type { RequestMethodsAndCodes } from "features/dashboard/types";
+import type { RequestDistribution } from "features/dashboard/types";
 
 type Props = {
-  distributionRequestMethods: RequestMethodsAndCodes
+  distributionRequestMethods: RequestDistribution
 };
 
 function RequestMethodsChart({ distributionRequestMethods }: Props) {
@@ -14,8 +14,8 @@ function RequestMethodsChart({ distributionRequestMethods }: Props) {
   }, [distributionRequestMethods])
 
   return (
-    <Card title="Distribution request codes"
-      style={{ maxWidth: 600 }}
+    <Card
+      title="Distribution request codes"
     >
       <Pie
         data={recordsDistributionRequestMethods}

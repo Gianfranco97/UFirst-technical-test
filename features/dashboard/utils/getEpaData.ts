@@ -3,7 +3,7 @@ import path from "path";
 import type {
   EpaData,
   DashboardData,
-  RequestMethodsAndCodes,
+  RequestDistribution,
 } from "features/dashboard/types";
 
 const EPA_FILE_PATH = "./public/epa-http.txt";
@@ -15,9 +15,9 @@ export const getEpaData = (): DashboardData => {
   const allFileContents = fs.readFileSync(dir, "utf-8");
 
   let totalInvalidRequest = 0;
-  let totalCorrectAnswersLight = 0;
-  const requestMethods: RequestMethodsAndCodes = {};
-  const requestCodes: RequestMethodsAndCodes = {};
+  const requestMethods: RequestDistribution = {};
+  const requestCodes: RequestDistribution = {};
+  const requestSizes: RequestDistribution = {};
 
   allFileContents.split(/\r?\n/).forEach((line: string) => {
     if (!line) {
@@ -45,7 +45,7 @@ export const getEpaData = (): DashboardData => {
     requestCodes[response_code] = (requestCodes[response_code] || 0) + 1;
 
     if (response_code === "200" && Number(document_size) < 1000) {
-      totalCorrectAnswersLight += 1;
+      requestSizes[document_size] = (requestSizes[document_size] || 0) + 1;
     }
 
     result.push({
@@ -98,9 +98,9 @@ export const getEpaData = (): DashboardData => {
       totalRequest,
       totalInvalidRequest,
       totalRequestPerMinute,
-      totalCorrectAnswersLight,
       distributionRequestMethods: requestMethods,
       distributionRequestCodes: requestCodes,
+      distributionRequestSizes: requestSizes,
     },
   };
 };
