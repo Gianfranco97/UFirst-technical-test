@@ -14,9 +14,7 @@ function RequestSizesChart({ distributionRequestSizes }: Props) {
   }, [distributionRequestSizes])
 
   return (
-    <Card
-      title="Distribution of requests with code 200 and size < 1000B"
-    >
+    <Card title="Distribution of requests with code 200 and size < 1000B">
       <Column
         data={recordsDistributionRequestSizes}
         xField='type'

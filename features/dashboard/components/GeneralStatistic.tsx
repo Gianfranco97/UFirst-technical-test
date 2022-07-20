@@ -8,9 +8,7 @@ type Props = {
 
 function GeneralStatistic({ totalRequest, totalInvalidRequest, totalRequestPerMinute }: Props) {
   return (
-    <Card
-      title="General statistic"
-    >
+    <Card title="General statistic">
       <Row gutter={[8, 24]}>
         <Col span={8}>
           <Statistic

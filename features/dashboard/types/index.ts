@@ -1,11 +1,13 @@
+export type EpaDateTime = {
+  day: string;
+  hour: string;
+  minute: string;
+  second: string;
+};
+
 export type EpaData = {
   host: string;
-  datetime: {
-    day: string;
-    hour: string;
-    minute: string;
-    second: string;
-  };
+  datetime: EpaDateTime;
   request: {
     method: string;
     url: string;

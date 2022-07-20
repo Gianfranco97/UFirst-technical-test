@@ -5,6 +5,7 @@ import type {
   DashboardData,
   RequestDistribution,
 } from "features/dashboard/types";
+import { transformDateToTimestamp } from "./transformDateToTimestamp";
 
 const EPA_FILE_PATH = "./public/epa-http.txt";
 
@@ -71,22 +72,8 @@ export const getEpaData = (): DashboardData => {
   const firstValue = result[0];
   const lastValue = result[result.length - 1];
 
-  const firstTimestamp = new Date(
-    null,
-    null,
-    firstValue.datetime.day,
-    firstValue.datetime.hour,
-    firstValue.datetime.minute,
-    firstValue.datetime.second
-  ).getTime();
-  const latsTimestamp = new Date(
-    null,
-    null,
-    lastValue.datetime.day,
-    lastValue.datetime.hour,
-    lastValue.datetime.minute,
-    lastValue.datetime.second
-  ).getTime();
+  const firstTimestamp = transformDateToTimestamp(firstValue.datetime);
+  const latsTimestamp = transformDateToTimestamp(lastValue.datetime);
 
   const totalRequest = result.length;
   const totalMinutes = Math.abs(firstTimestamp - latsTimestamp) / 1000 / 60;

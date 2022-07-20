@@ -14,9 +14,7 @@ function RequestMethodsChart({ distributionRequestMethods }: Props) {
   }, [distributionRequestMethods])
 
   return (
-    <Card
-      title="Distribution request codes"
-    >
+    <Card title="Distribution request codes">
       <Pie
         data={recordsDistributionRequestMethods}
         angleField='value'

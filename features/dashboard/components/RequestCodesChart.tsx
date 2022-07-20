@@ -14,9 +14,7 @@ function RequestCodesChart({ distributionRequestCodes }: Props) {
   }, [distributionRequestCodes])
 
   return (
-    <Card
-      title="Distribution request methods"
-    >
+    <Card title="Distribution request methods">
       <Bar
         data={recordsDistributionRequestCodes}
         xField='value'
