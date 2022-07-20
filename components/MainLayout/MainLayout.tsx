@@ -11,7 +11,7 @@ export default function MainLayout({ children }: DashboardLayoutProps) {
       <Layout.Header className={styles.header}><h1>Technical test - UFirst</h1></Layout.Header>
 
       <Layout>
-        <Layout.Content>{children}</Layout.Content>
+        <Layout.Content className={styles.main}>{children}</Layout.Content>
       </Layout>
 
       <Layout.Footer className={styles.footer}>© 2022 - Gianfranco Manganiello</Layout.Footer>
