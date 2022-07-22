@@ -5,6 +5,9 @@
     },
     "pages/**/*.ts": {
       "includeFiles": "public/*.txt"
+    },
+    "features/**/*.ts": {
+      "includeFiles": "public/*.txt"
     }
   }
 }
