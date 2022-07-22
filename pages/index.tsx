@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import { Col, Row } from "antd";
 import MainLayout from "components/MainLayout";
 import { getEpaData } from "features/dashboard/utils/getEpaData";
 import RequestMethodsChart from "features/dashboard/components/RequestMethodsChart";
@@ -6,7 +7,6 @@ import RequestCodesChart from "features/dashboard/components/RequestCodesChart";
 import type { DashboardData } from "features/dashboard/types";
 import GeneralStatistic from "features/dashboard/components/GeneralStatistic";
 import RequestSizesChart from "features/dashboard/components/RequestSizesChart";
-import { Col, Row } from "antd";
 
 type Props = {
   epaData?: DashboardData | null;

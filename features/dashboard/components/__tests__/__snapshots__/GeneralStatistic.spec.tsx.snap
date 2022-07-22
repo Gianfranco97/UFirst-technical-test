@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GeneralStatistic renders correctly 1`] = `
+<div>
+  <div
+    class="ant-card ant-card-bordered"
+  >
+    <div
+      class="ant-card-head"
+    >
+      <div
+        class="ant-card-head-wrapper"
+      >
+        <div
+          class="ant-card-head-title"
+        >
+          General statistic
+        </div>
+      </div>
+    </div>
+    <div
+      class="ant-card-body"
+    >
+      <div
+        class="ant-row"
+        style="margin: -12px -4px -12px -4px;"
+      >
+        <div
+          class="ant-col ant-col-8"
+          style="padding: 12px 4px 12px 4px;"
+        >
+          <div
+            class="ant-statistic"
+          >
+            <div
+              class="ant-statistic-title"
+            >
+              Total request
+            </div>
+            <div
+              class="ant-statistic-content"
+            >
+              <span
+                class="ant-statistic-content-value"
+              >
+                <span
+                  class="ant-statistic-content-value-int"
+                >
+                  10
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="ant-col ant-col-8"
+          style="padding: 12px 4px 12px 4px;"
+        >
+          <div
+            class="ant-statistic"
+          >
+            <div
+              class="ant-statistic-title"
+            >
+              Total request per minute
+            </div>
+            <div
+              class="ant-statistic-content"
+            >
+              <span
+                class="ant-statistic-content-value"
+              >
+                <span
+                  class="ant-statistic-content-value-int"
+                >
+                  4
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="ant-col ant-col-8"
+          style="padding: 12px 4px 12px 4px;"
+        >
+          <div
+            class="ant-statistic"
+          >
+            <div
+              class="ant-statistic-title"
+            >
+              Invalid request
+            </div>
+            <div
+              class="ant-statistic-content"
+            >
+              <span
+                class="ant-statistic-content-value"
+              >
+                <span
+                  class="ant-statistic-content-value-int"
+                >
+                  2
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

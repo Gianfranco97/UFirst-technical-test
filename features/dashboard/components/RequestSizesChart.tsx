@@ -1,6 +1,6 @@
 import { useMemo } from "react";
-import { Column } from '@ant-design/plots';
 import { Card } from 'antd';
+import { Column } from '@ant-design/plots';
 import { transformDistributionToRecordData } from "features/dashboard/utils/transformDistributionToRecordData";
 import type { RequestDistribution } from "features/dashboard/types";
 
@@ -19,7 +19,7 @@ function RequestSizesChart({ distributionRequestSizes }: Props) {
         data={recordsDistributionRequestSizes}
         xField='type'
         yField='value'
-        yAxis={{
+        xAxis={{
           label: {
             formatter: (text: string) => {
               return `${text} B`

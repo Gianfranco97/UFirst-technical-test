@@ -1,6 +1,6 @@
 import { useMemo } from "react";
-import { Bar } from '@ant-design/plots';
 import { Card } from 'antd';
+import { Bar } from '@ant-design/plots';
 import { transformDistributionToRecordData } from "features/dashboard/utils/transformDistributionToRecordData";
 import type { RequestDistribution } from "features/dashboard/types";
 
@@ -25,6 +25,14 @@ function RequestCodesChart({ distributionRequestCodes }: Props) {
               return `Code: ${text}`
             }
           }
+        }}
+        tooltip={{
+          title: (title: string) => {
+            return `Code: ${title}`;
+          },
+          formatter: (record: any) => {
+            return { name: "Total requests", value: record.value };
+          },
         }}
       />
     </Card>

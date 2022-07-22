@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadingFullPage renders correctly 1`] = `
+<div>
+  <section
+    class="ant-layout layout"
+  >
+    <header
+      class="ant-layout-header header"
+    >
+      <h1>
+        Technical test - UFirst
+      </h1>
+    </header>
+    <section
+      class="ant-layout"
+    >
+      <main
+        class="ant-layout-content main"
+      >
+        <div
+          class="loadingContainer"
+        >
+          <div
+            aria-busy="true"
+            aria-live="polite"
+            class="ant-spin ant-spin-lg ant-spin-spinning"
+          >
+            <span
+              class="ant-spin-dot ant-spin-dot-spin"
+            >
+              <i
+                class="ant-spin-dot-item"
+              />
+              <i
+                class="ant-spin-dot-item"
+              />
+              <i
+                class="ant-spin-dot-item"
+              />
+              <i
+                class="ant-spin-dot-item"
+              />
+            </span>
+          </div>
+        </div>
+      </main>
+    </section>
+    <footer
+      class="ant-layout-footer footer"
+    >
+      © 2022 - Gianfranco Manganiello
+    </footer>
+  </section>
+</div>
+`;

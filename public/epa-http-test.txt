@@ -1,3 +1,5 @@
-141.243.1.172 [29:23:53:25] "GET /Software.html HTTP/1.0" 200 1497
-query2.lycos.cs.cmu.edu [29:23:53:36] "GET /Consumer.html HTTP/1.0" 200 1325
-tanuki.twics.com [29:23:53:53] "GET /News.html HTTP/1.0" 200 1014
+archives.math.utk.edu [30:00:33:20] "HEAD /nep/nep.html HTTP/1.0" 200 0
+therese-anderson.umewmp.maine.edu [30:08:31:53] "GET /cgi-bin/xl_left.gif HTTP/1.0" 404 -
+r3opm007.r3opm.epa.gov [30:08:31:54] "GET /icons/ok2-0.gif HTTP/1.0" 200 231
+willard-ibmpc12.cac-labs.psu.edu [30:15:17:12] "cons/circle_logo_small.gif" 400 -
+denver.carl.org [30:16:14:42] "POST /cgi-bin/waisgate/134.67.99.11=earth1=210=/usr1/comwais/indexes/HTDOCS=gopher%40earth1=0.00=:free HTTP/1.0" 200 26771

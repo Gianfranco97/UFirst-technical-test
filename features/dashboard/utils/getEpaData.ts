@@ -5,9 +5,8 @@ import type {
   DashboardData,
   RequestDistribution,
 } from "features/dashboard/types";
+import { EPA_FILE_PATH } from "constants/config";
 import { transformDateToTimestamp } from "./transformDateToTimestamp";
-
-const EPA_FILE_PATH = "./public/epa-http.txt";
 
 export const getEpaData = (): DashboardData => {
   const result: Array<EpaData> = [];
