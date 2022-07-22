@@ -11,7 +11,7 @@
     "test": "jest --watch"
   },
   "dependencies": {
-    "@ant-design/charts": "^1.4.2",
+    "@ant-design/plots": "^1.1.1",
     "antd": "^4.21.7",
     "babel-plugin-superjson-next": "^0.4.3",
     "next": "12.2.2",

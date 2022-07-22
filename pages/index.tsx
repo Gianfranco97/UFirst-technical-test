@@ -29,7 +29,6 @@ const Home: NextPage<Props> = ({ epaData }) => {
             distributionRequestMethods={epaData?.statistics?.distributionRequestMethods ?? {}}
           />
         </Col>
-
         <Col xs={24} md={12}>
           <RequestCodesChart
             distributionRequestCodes={epaData?.statistics?.distributionRequestCodes ?? {}}

@@ -1,6 +1,6 @@
 import { useMemo } from "react";
-import { Card } from 'antd';
 import { Column } from '@ant-design/plots';
+import { Card } from 'antd';
 import { transformDistributionToRecordData } from "features/dashboard/utils/transformDistributionToRecordData";
 import type { RequestDistribution } from "features/dashboard/types";
 
