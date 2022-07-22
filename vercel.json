@@ -1,6 +1,12 @@
 {
   "functions": {
-    "**/**.js": {
+    "pages/**.tsx": {
+      "includeFiles": "public/*.txt"
+    },
+    "pages/**.ts": {
+      "includeFiles": "public/*.txt"
+    },
+    "features/**.ts": {
       "includeFiles": "public/*.txt"
     }
   }
