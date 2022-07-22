@@ -2,7 +2,7 @@ import { expect } from "@jest/globals";
 import { getEpaData } from "../getEpaData";
 
 jest.mock("constants/config", () => ({
-  EPA_FILE_PATH: "./public/epa-http-test.txt",
+  EPA_FILE_PATH: "epa-http-test.txt",
 }));
 
 const EXPECTED_VALUE = {

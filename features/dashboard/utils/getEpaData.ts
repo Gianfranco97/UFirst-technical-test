@@ -11,8 +11,8 @@ import { transformDateToTimestamp } from "./transformDateToTimestamp";
 export const getEpaData = (): DashboardData => {
   const result: Array<EpaData> = [];
 
-  const dir = path.resolve(EPA_FILE_PATH);
-  const allFileContents = fs.readFileSync(dir, "utf-8");
+  const file = path.join(process.cwd(), "files", EPA_FILE_PATH);
+  const allFileContents = fs.readFileSync(file, "utf-8");
 
   let totalInvalidRequest = 0;
   const requestMethods: RequestDistribution = {};

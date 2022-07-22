@@ -1,13 +1,10 @@
 {
   "functions": {
     "pages/**/*.tsx": {
-      "includeFiles": "public/*.txt"
+      "includeFiles": "files/*.txt"
     },
     "pages/**/*.ts": {
-      "includeFiles": "public/*.txt"
-    },
-    "features/**/*.ts": {
-      "includeFiles": "public/*.txt"
+      "includeFiles": "files/*.txt"
     }
   }
 }
