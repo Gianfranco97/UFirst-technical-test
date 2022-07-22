@@ -1,9 +1,9 @@
 {
   "functions": {
-    "pages/**.tsx": {
+    "pages/**/*.tsx": {
       "includeFiles": "public/*.txt"
     },
-    "pages/**.ts": {
+    "pages/**/*.ts": {
       "includeFiles": "public/*.txt"
     }
   }
